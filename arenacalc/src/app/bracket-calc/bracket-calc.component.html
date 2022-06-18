@@ -1,0 +1,6 @@
+<p>Bracket is : {{bracketName}} and rating is {{ratingInput}}</p>
+<input id="ratingInput" type="Number" min="150" required="true" [(ngModel)]="ratingInput"/>
+<button (click)="onClick()">Compute</button>
+
+TLK : <input id="tlkPoints" type="number" [(ngModel)]="tlkPoints" disabled/>
+TBC : <input id="tbcPoints" type="number" [(ngModel)]="tbcPoints" disabled/>
