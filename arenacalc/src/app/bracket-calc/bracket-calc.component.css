@@ -1,0 +1,40 @@
+span{
+  color:white;
+}
+
+.bracketText{
+    text-align:center;
+}
+
+.bracketContainer{
+    background-color: #001a4d;
+    border:solid #002266;
+    border-radius:25px;
+    text-align:center;
+    padding: 10px 10px 10px 10px;
+    margin:0px 10px 10px 10px;
+}
+
+.bracketRow, .ratingRow, .pointsRow{
+    display:inline-block;
+    padding: 10px 10px 10px 10px;
+}
+
+.ratingText{
+   padding-bottom:4px;
+   text-align:left;
+}
+
+.ratingInput{
+    padding:0px;
+}
+
+.pointsTLK, .pointsTBC{
+    margin-top:4px;
+    margin-bottom:4px;
+}
+
+.pointsLogo, .calcBtn{
+    background-color:#001a4d;
+    border-color:#003399;
+}

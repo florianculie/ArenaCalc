@@ -1,0 +1,11 @@
+.root{
+    background-color:#003399;
+    padding:40px;
+    color:white;
+    max-width:100%;
+    font-family: "LifeCraft", Arial, Helveritca, sans-serif;
+    font-size: 30px;
+}
+.bracketCalc{
+    text-align:center;
+}
