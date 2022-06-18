@@ -39,8 +39,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "../arenacalc-pages",
-            "index": "../index.html",
+            "outputPath": "dist/arenacalc",
+            "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",

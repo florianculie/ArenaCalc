@@ -1,7 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
 body{
-    background-color: #003399 !important;
+    background-color: #1D3E53 !important;
     overflow:auto;
+}
+
+.titleContent{
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+  font-family: "LifeCraft", Arial, Helveritca, sans-serif;
+  color:#EEEEEE;
+}
+
+footer{
+  background-color: #254B62 !important;
+  color:#EEEEEE !important;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer>div>a{
+  text-decoration: none!important;
 }
 
 @font-face {

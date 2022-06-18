@@ -1,5 +1,5 @@
 span{
-  color:white;
+  color:#EEEEEE;
 }
 
 .bracketText{
@@ -7,12 +7,18 @@ span{
 }
 
 .bracketContainer{
-    background-color: #001a4d;
-    border:solid #002266;
+    background-color: #254B62;
+    border:solid #254B62;
     border-radius:25px;
     text-align:center;
     padding: 10px 10px 10px 10px;
     margin:0px 10px 10px 10px;
+}
+
+.pointsLogo, .calcBtn{
+    background-color:#77ABB7;
+    border-color:#77ABB7;
+    color:#EEEEEE;
 }
 
 .bracketRow, .ratingRow, .pointsRow{
@@ -34,7 +40,7 @@ span{
     margin-bottom:4px;
 }
 
-.pointsLogo, .calcBtn{
-    background-color:#001a4d;
-    border-color:#003399;
+.calcBtn{
+  padding-top: 11px;
+  padding-bottom: 11px;
 }
