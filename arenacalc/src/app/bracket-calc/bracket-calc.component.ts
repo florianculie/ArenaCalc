@@ -10,7 +10,7 @@ export class BracketCalcComponent implements OnInit {
   @Input() bracketType!: number;
   ratingInput: number = 0;
   tbcPoints!: number;
-  tlkPoints!: string;
+  tlkPoints!: number;
 
 
   constructor() { }
@@ -18,7 +18,7 @@ export class BracketCalcComponent implements OnInit {
   ngOnInit(): void {
     this.ratingInput = 0;
     this.tbcPoints = 0;
-    this.tlkPoints = '';
+    this.tlkPoints = 0;
   }
 
   onClick(){
@@ -45,7 +45,7 @@ export class BracketCalcComponent implements OnInit {
     return Math.round(points);
   }
 
-  computeTLK(rating : number): string{
-    return "Soon™";
+  computeTLK(rating : number): number{
+    return this.computeTBC(rating);
   }
 }
