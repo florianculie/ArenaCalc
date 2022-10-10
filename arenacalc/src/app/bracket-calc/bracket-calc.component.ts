@@ -24,6 +24,7 @@ export class BracketCalcComponent implements OnInit {
   onClick(){
     this.tbcPoints = this.computeTBC(this.ratingInput);
     this.tlkPoints = this.computeTLK(this.ratingInput);
+    
   }
 
   computeTBC(rating : number): number{
