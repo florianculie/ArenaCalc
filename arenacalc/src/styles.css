@@ -11,19 +11,26 @@ body{
   color:#EEEEEE;
 }
 
-footer{
+.footer{
   background-color: #254B62 !important;
   color:#EEEEEE !important;
-  position: fixed;
+  position: relative;
   bottom: 0;
+  left:0;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
-footer>div>a{
+.footer>div>a{
   text-decoration: none!important;
+}
+
+.root{
+  padding-top: 10px!important;
+  padding-bottom: 10px!important;
 }
 
 @font-face {
