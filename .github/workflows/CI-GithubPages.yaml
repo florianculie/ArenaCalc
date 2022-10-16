@@ -20,18 +20,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-      - name: Use Node 12.x
+      - name: Use Node 13.x
         uses: actions/setup-node@v1
         with:
-          node-version: '12.x'
+          node-version: '13.x'
       - name: Install dependencies
         run: |
-          ls
           cd arenacalc 
-          ls
           npm install
       - name: Build
-        run: npm run build:ci
+        run: |
+          cd arenacalc
+          npm run build:ci
       - name: Archive Build
         uses: actions/upload-artifact@v1
         with: 
