@@ -41,20 +41,20 @@ export class LineChartComponent implements OnInit {
           {
             label: "2v2",
             data: twosSerie,
-            backgroundColor: '#FFD770',
-            borderColor: '#FFD770'
+            backgroundColor: '#3F6E78',
+            borderColor: '#3F6E78'
           },
           {
             label: "3v3",
             data: threesSerie,
-            backgroundColor: '#20AC68',
-            borderColor: '#20AC68'
+            backgroundColor: '#5492A0',
+            borderColor: '#5492A0'
           },
           {
             label: "5v5",
             data: fivesSerie,
-            backgroundColor: '#B33F62',
-            borderColor: '#B33F62'
+            backgroundColor: '#79ADB9',
+            borderColor: '#79ADB9'
           }
         ]
       },
