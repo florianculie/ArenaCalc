@@ -10,8 +10,7 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-permissions: 
-  contents: write
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -51,6 +50,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          ACCESS_TOKEN: ${{ secrets.GITACTION_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.GH_ACTION_TOKEN }}
           BRANCH: main
           FOLDER: deploy_dist/arenacalc
