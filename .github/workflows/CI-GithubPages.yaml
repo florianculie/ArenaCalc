@@ -51,5 +51,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
+          token: ${{ secrets.GITACTION_TOKEN }}
           BRANCH: main
           FOLDER: deploy_dist/arenacalc
