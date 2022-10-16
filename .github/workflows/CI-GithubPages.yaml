@@ -25,7 +25,11 @@ jobs:
         with:
           node-version: '12.x'
       - name: Install dependencies
-        run: cd arenacalc npm install
+        run: |
+          ls
+          cd arenacalc 
+          ls
+          npm install
       - name: Build
         run: npm run build:ci
       - name: Archive Build
