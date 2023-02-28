@@ -49,6 +49,7 @@ jobs:
           name: deploy_dist
       - name: checking
         run : |
+          cd arenacalc
           ls
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@releases/v4
