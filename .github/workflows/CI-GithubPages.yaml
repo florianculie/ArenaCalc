@@ -56,4 +56,4 @@ jobs:
         with:
           token: ${{ secrets.GH_ACTION_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: dist
+          FOLDER: arenacalc
