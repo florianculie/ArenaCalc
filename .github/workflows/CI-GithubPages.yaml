@@ -48,10 +48,6 @@ jobs:
         with: 
           name: deploy_dist
           path: dist
-      - name: checking
-        run: |
-          cd dist
-          ls 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
