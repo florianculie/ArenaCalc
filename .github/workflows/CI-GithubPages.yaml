@@ -21,7 +21,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       - name: Use Node 16.x
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3.6.0
         with:
           node-version: '16.x'
       - name: Install dependencies
@@ -33,7 +33,7 @@ jobs:
           cd arenacalc
           npm run build:ci
       - name: Archive Build
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v3.1.2
         with: 
           name: deploy_dist
           path: arenacalc/dist
@@ -44,11 +44,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       - name: Download build
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v3.0.2
         with: 
           name: deploy_dist
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
           ACCESS_TOKEN: ${{ secrets.GH_ACTION_TOKEN }}
           BRANCH: gh-pages
