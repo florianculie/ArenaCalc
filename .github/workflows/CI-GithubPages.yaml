@@ -50,6 +50,9 @@ jobs:
           path: dist
       - name: checking
         run: |
+          ls
+          cd arenacalc
+          ls
           cd ..
           ls
       - name: Deploy to GitHub Pages
