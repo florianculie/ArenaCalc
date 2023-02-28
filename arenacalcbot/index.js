@@ -1,6 +1,5 @@
 const { Client, Intents } = require("discord.js");
 const config = require("./config.json");
-//const https = require('https');
 const axios = require('axios').default;
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
@@ -29,7 +28,7 @@ client.on("messageCreate", function(message){
         const server = char.info.server;
 
         let promises = [];
-        for (var i = 1; i < 4; i++) {
+        for (let i = 1; i < 4; i++) {
           if(char.season4[`${i}`].team != null){
             promises.push(fetchTeam(`${i}`, server, char.season4[`${i}`].team[0]));
           }
@@ -41,10 +40,7 @@ client.on("messageCreate", function(message){
           })
 
         console.log(char.season4);
-        //console.log(char.season4['2'].toString());
       })
-    //let results = calculatePoints(jsonCharData.info, jsonCharData.season4);
-    //message.reply(results);
   }
 });
 
@@ -101,7 +97,7 @@ async function getAccurateRating(charInfo, season, bracketType){
     if(season[bracketType].team == null){
       return 0;
     }
-    const charCR = season[bracketType].cr[0];
+    let charCR = season[bracketType].cr[0];
     const teamID = season[bracketType].team[0];
     const teamCR = await fetchTeamSync(bracketType, charInfo.server, teamID);
 
