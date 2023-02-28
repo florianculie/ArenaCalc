@@ -47,8 +47,9 @@ jobs:
         uses: actions/download-artifact@v3.0.2
         with: 
           name: deploy_dist
+          path: dist
       - name: checking
-        run : |
+        run: |
           cd ..
           ls
       - name: Deploy to GitHub Pages
@@ -56,4 +57,4 @@ jobs:
         with:
           token: ${{ secrets.GH_ACTION_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: deploy_dist
+          FOLDER: arenacalc/dist
