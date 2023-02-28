@@ -50,6 +50,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
-          ACCESS_TOKEN: ${{ secrets.GH_ACTION_TOKEN }}
+          token: ${{ secrets.GH_ACTION_TOKEN }}
           BRANCH: gh-pages
           FOLDER: deploy_dist/arenacalc
